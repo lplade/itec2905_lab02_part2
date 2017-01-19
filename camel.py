@@ -1,4 +1,4 @@
-#!/bin/python
+#!/bin/python3
 
 # Write a program that turns a sentence into camel case. The first word is
 # lowercase, the rest of the words have their initial letter capitalized, and
@@ -12,6 +12,15 @@
 # or containing invalid characters such as # or + or ".
 #
 # Test your program, and comment your code.
+
+def display_banner():
+    '''Display program name in a banner'''
+    msg = "AWESOME camelCaseGenerators PROGRAM"
+    stars = '*' * len(msg)
+    print('\n', stars, '\n', msg, '\n', stars, '\n')
+
+
+display_banner()
 
 print("Enter a sentence and I will camelCase it.")
 input_sentence = input("> ")
